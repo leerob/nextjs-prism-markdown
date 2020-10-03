@@ -64,7 +64,7 @@ export default function Layout({ children, meta: pageMeta }) {
         </a>
         <div className="flex justify-between items-center p-8 mx-2">
           <Link href="/">
-            <a className="no-underline font-semibold">
+            <a className="no-underline font-semibold invisible sm:visible">
               <h1>{meta.title}</h1>
             </a>
           </Link>
