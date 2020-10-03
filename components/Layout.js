@@ -96,7 +96,7 @@ export default function Layout({ children, meta: pageMeta }) {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/leerob/nextjs-incremental-adoption"
+                href="https://github.com/leerob/nextjs-prism-markdown"
                 className="no-underline font-semibold text-gray-700"
               >
                 Source
