@@ -5,7 +5,7 @@ description: 'Example using Prism / Markdown with Next.js including switching sy
 
 # Using Prism with Next.js
 
-[**Prism**](https://prismjs.com/) is popular syntax highlighter commonly used with Markdown.
+[**Prism**](https://prismjs.com/) is a popular syntax highlighter commonly used with Markdown.
 This example shows how to use Prism with [**Next.js**](https://nextjs.org/). Use the theme dropdown
 in the header to switch syntax highlighting themes.
 
@@ -80,6 +80,6 @@ into this HTML, which includes the proper elements and class names.
 
 ## Deploy Your Own
 
-View the [**source code**](https://github.com/leerob/nextjs-prism-markdown) and deply your own example. You can add new Markdown files to `docs/` and see them live instantly!
+View the [**source code**](https://github.com/leerob/nextjs-prism-markdown) and deploy your own. You can add new Markdown files to `docs/` and see them live instantly!
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?c=1&s=https://github.com/leerob/nextjs-prism-markdown)
