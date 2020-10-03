@@ -107,7 +107,7 @@ export default function Layout({ children, meta: pageMeta }) {
       </nav>
       <div id="skip">
         <article
-          className="prose lg:prose-xl px-8 m-auto my-16"
+          className="prose lg:prose-xl px-8 m-auto my-4 sm:my-16"
           dangerouslySetInnerHTML={{ __html: children }}
         />
       </div>
