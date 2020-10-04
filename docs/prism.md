@@ -31,7 +31,7 @@ export function getDocBySlug(slug) {
 }
 ```
 
-Then, we can **tranform** the raw Markdown into HTML using [remark](https://github.com/remarkjs/remark) plugins.
+Then, we can **transform** the raw Markdown into HTML using [remark](https://github.com/remarkjs/remark) plugins.
 
 ```js
 // lib/markdown.js
