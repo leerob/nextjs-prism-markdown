@@ -20,9 +20,10 @@ import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 
+const docsDirectory = join(process.cwd(), 'docs');
+
 export function getDocBySlug(slug) {
   const realSlug = slug.replace(/\.md$/, '');
-  const docsDirectory = join(process.cwd(), 'docs');
   const fullPath = join(docsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
@@ -36,12 +37,16 @@ Then, we can **transform** the raw Markdown into HTML using [remark](https://git
 ```js
 // lib/markdown.js
 
-import remark from 'remark';
+import { remark } from 'remark';
 import html from 'remark-html';
 import prism from 'remark-prism';
 
 export default async function markdownToHtml(markdown) {
-  const result = await remark().use(html).use(prism).process(markdown);
+  const result = await remark()
+    // https://github.com/sergioramos/remark-prism/issues/265
+    .use(html, { sanitize: false })
+    .use(prism)
+    .process(markdown);
   return result.toString();
 }
 ```

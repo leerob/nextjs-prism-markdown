@@ -29,6 +29,6 @@ export async function getStaticPaths() {
         }
       };
     }),
-    fallback: 'unstable_blocking'
+    fallback: 'blocking'
   };
 }
